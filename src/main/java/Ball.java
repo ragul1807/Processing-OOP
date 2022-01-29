@@ -10,9 +10,14 @@ public class Ball {
         this.movingSpeed = movingSpeed;
         this.yPosition = yPosition;
     }
-    public void move()
+    public void ballMover()
     {
         this.sketch.ellipse(xPosition,yPosition,diameter,diameter);
+
+    }
+
+    public void speed() {
         this.xPosition+=movingSpeed;
     }
+
 }
